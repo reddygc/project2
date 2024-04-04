@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME</title>
+  <LInk rel="stylesheet" href="./style.css ">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script type="text/javascript">
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          var originalAddEventListener = EventTarget.prototype.addEventListener,
+              oldWidth = window.innerWidth;
+
+          EventTarget.prototype.addEventListener = function (eventName, eventHandler, useCapture) {
+              if (eventName === "resize") {
+                  originalAddEventListener.call(this, eventName, function (event) {
+                      if (oldWidth === window.innerWidth) {
+                          return;
+                      }
+                      else if (oldWidth !== window.innerWidth) {
+                          oldWidth = window.innerWidth;
+                      }
+                      if (eventHandler.handleEvent) {
+                          eventHandler.handleEvent.call(this, event);
+                      }
+                      else {
+                          eventHandler.call(this, event);
+                      };
+                  }, useCapture);
+              }
+              else {
+                  originalAddEventListener.call(this, eventName, eventHandler, useCapture);
+              };
+          };
+      };
+  </script>
+   
+</head>
+
+<body>
+  <div class="container">
+
+    <img class="mySlides" src="./infra images/banns1.jpg" style="width: 1200px" height="500px">
+    <img class="mySlides" src="./infra images/infar2.jpg" style="width: 1200px" height="500px">
+    <img class="mySlides" src="./infra images/infra4.jpg" style="width: 1200px" height="500px">
+    <img class="mySlides" src="./infra images/infar3.jpg" style="width: 1200px" height="500px">
+
+  </div>
+
+  <script>
+
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > x.length) { slideIndex = 1 }
+      x[slideIndex - 1].style.display = "block";
+      setTimeout(carousel, 2000);
+    }
+
+  </script>
+  <div id="nav">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="aboutus.html">ABOUT US</a></li>
+      <li><a href="VERTICALS.html">VERTICALS</a>
+        <ul id="sub">
+          <li><a href="Transportation.html">Transportation</a></li>
+          <li><a href="Water & Environment.html">Water & Environment</a></li>
+          <li><a href="Irrigation.html">Irrigation</a></li>
+          <li><a href="Power & Industrial.html">Power & Industrial</a></li>
+          <li><a href="Power T & D.html">Power T & D</a></li>
+          <li><a href="Buldings.html">Buldings</a></li>
+        </ul>
+      </li>
+      <li><a href="CLIENTS.html">CLIENTS</a></li>
+      <li><a href="CAREERS.html">CAREERS</a></li>
+      <li><a href="CONTACT.html">CONTACT</a></li>
+    </ul>
+
+  </div>
+
+   <div class="ph">
+    <P1 style="font-size: 2.8em;">Welcome To</P1>
+    <p2>CGR Projects Limited</p2>
+  </div>
+  <div class="pp">
+    <pp>Ever since its inception in 2001, CGR has achieved consistent quantum growth year after year along with enhanced
+      customer<br><br> confidence and satisfaction. CGR has been in the forefront of adopting new technologies &
+      advancements
+      and
+      has honed, over the<br><br> years, multidisciplinary competencies. CGR today holds a strong pool of highly skilled
+      engineers
+      and state-of-the-art equipment to<br><br> deliver Infrastructure Projects to Public and Private Sector Clients, in
+      the
+      scheduled Timelines within the specified Quality<br><br> parameters. CGR is an Infrastructure Associate of choice
+      for
+      several key clients. This preference stems from CGR commitment to<br><br> Ethics & Quality, Timely Delivery and
+      Value
+      Engineering.</pp>
+  </div>
+  <a href="#" class="button">button</a>
+  <br><br>
+  <h3 class="title">Our Clients</h3>
+
+  <section id="marquee">
+    <div class="container">
+      <div class="pic-container">
+        <div class="pic">
+          <img src="./ourclints/c1.jpg" alt="img">
+        </div>
+        <div class="pic">
+          <img src="./ourclints/c2.jpg" alt="img">
+        </div>
+        <div class="pic">
+          <img src="./ourclints/c3.jpg" alt="img">
+        </div>
+        <div class="pic">
+          <img src="./ourclints/c4.jpg" alt="img">
+        </div>
+        <div class="pic">
+          <img src="./ourclints/c6.jpg" alt="img">
+        </div>
+        <div class="pic">
+          <img src="./ourclints/c7.jpg" alt="img">
+        </div>
+        <div class="pic">
+          <img src="./ourclints/c8.jpg" alt="img">
+        </div>
+        <div class="pic">
+          <img src="./ourclints/c9.png" alt="img">
+        </div>
+        <div class="pic">
+          <img src="./ourclints/c1.jpg" alt="img">
+        </div>
+        <div class="pic">
+          <img src="./ourclints/c2.jpg" alt="img">
+        </div>
+      </div>
+  </section>
+  <div class="footer">
+    <div class="container">
+    </div>
+  </div>
+  <h2 style="color: white;">About Us</h2>
+  <h3 style="color: white; font-size: 30px;">Navigition</h3>
+  <h4 style="color: white; font-size: 30px;">CGR Projects Limited</h4>
+
+  <ul class="nav2">
+    <li><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span><a href="index.html">Home</a></li>
+    <li><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span><a href="aboutus.html">About Us</a></li>
+    <li><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span><a href="Verticals.html">Verticals</a>
+    </li>
+    <li><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span><a href="Clients.html">Clients</a></li>
+    <li><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span><a href="Careers.html">Careers</a></li>
+    <li><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span><a href="Contact.html">Contact</a></li>
+  </ul>
+  <ul id="ad">
+    <li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Sy. No.9 ( P ), HITEC City, CII Green
+      Building Lane,</li>
+
+    <li>Kondapur, Hyderabad - 500084, Telangana, INDIA.</li>
+    <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>info@gkcpl.com</li>
+    <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+ 91 40 4455 4545</li>
+    <li><span class="glyphicon glyphicon-print" aria-hidden="true"></span>+91 40 4455 4555</li>
+  </ul>
+  <div>
+    <p class="para1">Ever since its inception in 1996, CGR has achieved consistent quantum growth year after year along
+      with enhanced customer confidence and satisfaction. CGR has been in the forefront of adopting new technologies &
+      advancements and has honed, over the years, multidisciplinary </p>
+    <br>
+  </div>
+  <div id="grad1"></div>
+  <div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <script>
+
+    let mybutton = document.getElementById("myBtn");
+
+
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <div id="background"></div>
+  <div class="copy">
+    <p>Copy Right &copy;gcreddy</p>
+  </div>
+  <img class="box">
+</body>
+
+</html>
